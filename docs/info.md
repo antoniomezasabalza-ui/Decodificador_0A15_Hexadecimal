@@ -9,12 +9,27 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project is a combinational circuit that decodes BCD code to a 7-segment display. The circuit counts from 0 to 15, displaying the values in decimal (0–9) and hexadecimal (0–F). Additionally, an extra bit is included to control the decimal point (DP) on the 7-segment display.
 
 ## How to test
+1. Apply power to the circuit.
 
-Explain how to use your project
+2. Feed the BCD inputs (4 bits) with values from 0000 to 1111 (0 to 15).
+
+3. Observe the 7-segment display: it should show 0–9 for the first ten combinations and A–F for the remaining six.
+
+4. Toggle the extra control bit to turn the decimal point on and off.
+
+5. Verify that each input combination produces the correct segment pattern on the display.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+* 7-segment display (common anode or common cathode, depending on your design)
+
+* BCD input switches or signal source (4 bits)
+
+* 1 extra control bit (switch or signal) for the decimal point
+
+* Current-limiting resistors for the 7-segment display
+
+* (Optional) PMOD or FPGA board, if applicable
